@@ -16,12 +16,13 @@ def math_quiz(n1, n2):
     answer = n1+n2
     print ("What is the sum of these two numbers:")
     print (n1, "+", n2)
-number_1 = 129
-number_2 = 303
+number_1 = 121
+number_2 = 109
+correct = number_1 + number_2
 math_quiz(number_1, number_2)
 guess = int(input("Answer: "))
-if guess != 432:
+if guess != correct:
     print ("Incorrect")
-    print ("Correct Answer: 432")
+    print ("Correct Answer:", correct)
 else:
     print ("Correct!")
