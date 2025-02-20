@@ -16,8 +16,9 @@ def math_quiz(n1, n2):
     answer = n1+n2
     print ("What is the sum of these two numbers:")
     print (n1, "+", n2)
-number_1 = 121
-number_2 = 109
+import random
+number_1 = int(random.randint(40, 200))
+number_2 = int(random.randint(1, 100))
 correct = number_1 + number_2
 math_quiz(number_1, number_2)
 guess = int(input("Answer: "))

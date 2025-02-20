@@ -5,26 +5,21 @@
 # The conversion must be done as a function with input and output.
 
 
-def kilometer_conversion(kilometers):    
+def kilometer_conversion():
     miles = 0.0
     ######################
-    if __name__ == '__main__':
-        print('in main')
-        # Get User Input
-    def kilometer_converter(n1, n2):
+    def kilometers_conversions(n1, n2):
         miles = n1 * n2
-    kilo = float(input('Please enter the distance (Kilometers):'))
+        print ('Distance in Miles:', miles)
     conversion_number = 0.6214
-        # Call kilometer_conversion, don't forget to pass in the kilometer parameter!
-    kilometer_converter(kilo, conversion_number)
-        # Display the miles
-    print ('Distance in Miles:', miles)
+    kilometers = float(input('Please enter the distance (Kilometers):'))
+    kilometers_conversions(kilometers, conversion_number)
     ######################
 
 
     # Return the variable to the calling function
     return miles
-
+kilometer_conversion()
 #### This piece of the code has been done for you,
 #### you only need to worry about the actual kilometer
 #### conversion logic in the kilometer_conversion function
