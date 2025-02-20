@@ -11,3 +11,19 @@
 # If the answer is correct, a message of congratulations should be displayed.  
 # If the answer is incorrect a message showing the correct answer should be displayed.  
 # The program must use a function that accomplishes part of the needed tasks.
+
+def math_quiz(n1, n2):
+    answer = n1+n2
+    print ("What is the sum of these two numbers:")
+    print (n1, "+", n2)
+import random
+number_1 = int(random.randint(40, 200))
+number_2 = int(random.randint(1, 100))
+correct = number_1 + number_2
+math_quiz(number_1, number_2)
+guess = int(input("Answer: "))
+if guess != correct:
+    print ("Incorrect")
+    print ("Correct Answer:", correct)
+else:
+    print ("Correct!")
